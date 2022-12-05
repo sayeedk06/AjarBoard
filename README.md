@@ -11,6 +11,7 @@
 <ul>
 <li>Django Rest Framework</li>
 <li>Next Js</li>
+<li>React-Grid-Layout
 <li>Docker</li>
 <li>Mysql/Postgres</li>
 <li>Redis</li>
@@ -33,6 +34,8 @@
 
 <h2> Task List </h2>
 
-    - [x] Finalise endpoints
+    - [x] UI Design
+    - [x] DB Design
+    - [ ] Finalise endpoints
     - [ ] Plan the database
     - [ ] Start writing api for server side

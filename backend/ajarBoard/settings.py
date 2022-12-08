@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -73,6 +74,7 @@ WSGI_APPLICATION = 'ajarBoard.wsgi.application'
 
 
 # Database
+AUTH_USER_MODEL = 'api.customUserModel'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {

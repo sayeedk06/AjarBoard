@@ -36,6 +36,8 @@
 
     - [x] UI Design
     - [x] DB Design
+    - [x] Initial DB/model set up
+    - [o] Feature/dashboard
     - [ ] Finalise endpoints
     - [ ] Plan the database
     - [ ] Start writing api for server side

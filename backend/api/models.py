@@ -10,14 +10,15 @@ class customUserModel(AbstractUser):
 
 class dashboardModel(models.Model):
     DASH_TYPES = [
-        ('PB', 'Published'),
         ('DR', 'Draft'),
+        ('PB', 'Published'),
+        
     ]    
     id = models.UUIDField(primary_key=True, default=uuid4)
     user_id = models.ForeignKey(customUserModel, on_delete=models.CASCADE)
     created = models.DateTimeField(default=timezone.now)
     last_edited = models.DateTimeField()
-    dash_type = models.CharField(max_length=2, choices=DASH_TYPES, help_text='Specify whether the dashboard is a draft or ready to be published')
+    dash_type = models.CharField(max_length=2, choices=DASH_TYPES, default ='DR' ,help_text='Specify whether the dashboard is a draft or ready to be published')
 
 class dataModel(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)

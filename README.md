@@ -26,7 +26,7 @@
 <li>POST /API/dashboard/</li>
 <li>DELETE /API/dashboard/</li>
 <li>PUT /API/dashboard/</li>
-<li>POST /API/upload/</li>
+<li>POST /API/upload_data/</li>
 <li>GET /API/get_data/</li>
 <li>GET /API/charts/</li>
 <li>POST /API/charts/</li>
@@ -39,6 +39,6 @@
     - [x] Initial DB/model set up
     - [o] Feature/dashboard
     - [o] Feature/upload_data
+    - [o] Initialize frontend with Nextjs
+    - [o] Learn Nextjs best practices
     - [ ] Finalise endpoints
-    - [ ] Plan the database
-    - [ ] Start writing api for server side

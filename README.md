@@ -38,6 +38,7 @@
     - [x] DB Design
     - [x] Initial DB/model set up
     - [o] Feature/dashboard
+    - [o] Feature/upload_data
     - [ ] Finalise endpoints
     - [ ] Plan the database
     - [ ] Start writing api for server side

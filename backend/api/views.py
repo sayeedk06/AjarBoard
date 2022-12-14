@@ -6,6 +6,7 @@ from rest_framework import status
 from .models import dashboardModel
 from .serializers import dashboardSerializer, fileuploadSerializer
 import pandas as pd
+from uuid import uuid4
 # Create your views here.
 
 class dashboardAPIView(generics.ListCreateAPIView):
@@ -28,6 +29,7 @@ class uploadDataAPIView(generics.GenericAPIView):
             if file_type == 'csv':
                 reader = pd.read_csv(file)
                 json_convert = reader.to_json()
+
             elif file_type == 'xlsx':
                 pass
             else:

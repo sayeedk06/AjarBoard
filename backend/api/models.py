@@ -22,6 +22,7 @@ class dashboardModel(models.Model):
 
 class dataModel(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
+    data_user_id = models.ForeignKey(customUserModel, on_delete=models.CASCADE)
     csv_data = models.JSONField()
 
 class chartModel(models.Model):

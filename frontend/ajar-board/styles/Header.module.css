@@ -1,0 +1,8 @@
+.HeaderList {
+    list-style-type: none;
+    display: flex;
+}
+
+.HeaderList li {
+    padding: 0.5rem;
+}

@@ -1,0 +1,19 @@
+.nav{
+    list-style-type: none;
+    display: block;
+    padding: 1rem;
+    position: fixed;
+    margin-top: 5rem;
+    text-align: center;
+    width: 100%
+    
+}
+
+.nav li {
+
+    position: relative;
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 5px;
+
+}

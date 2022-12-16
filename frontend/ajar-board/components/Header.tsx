@@ -6,7 +6,7 @@ export default function Header () {
         <div>
             <ul className={Styles.HeaderList}>
                 <li>
-                    <Link href='/'>AjarBoard</Link>
+                    <Link href='/'>AjarBoard Logo</Link>
                 </li>
                 <li>
                     <Link href='/profile'>Login</Link>

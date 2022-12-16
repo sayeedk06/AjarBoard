@@ -10,7 +10,12 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
-      <h4>Somethign is here</h4>
+      <div className={styles.main}>
+          <h1><span>Ajar</span>Board</h1>
+          <p>AjarBoard is a minimal data exploration and visualization platform.
+          It is beginner friendly and easy to get started with least amount of labour.
+          </p>
+      </div>
 
       
     </div>

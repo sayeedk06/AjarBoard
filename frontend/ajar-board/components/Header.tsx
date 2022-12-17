@@ -9,7 +9,7 @@ export default function Header () {
                     <Link href='/'>AjarBoard Logo</Link>
                 </li>
                 <li>
-                    <Link href='/profile'>Login</Link>
+                    <Link href='/profile/home'>Login</Link>
                 </li>
             </ul>
         </div>

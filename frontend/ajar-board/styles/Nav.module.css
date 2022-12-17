@@ -2,14 +2,35 @@
     list-style-type: none;
     display: block;
     padding: 1rem;
-    position: fixed;
-    margin-top: 5rem;
     text-align: center;
-    width: 100%
-    
+    width: 100%;
+    border-top: 1px solid #eaeaea;
 }
 
 .nav li {
+
+    position: relative;
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 5px;
+
+}
+
+.stickyNav {
+    list-style-type: none;
+    display: block;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    background-color: #F3EFE0;
+    color: black;
+}
+
+.stickyNav li {
 
     position: relative;
     display: inline-block;

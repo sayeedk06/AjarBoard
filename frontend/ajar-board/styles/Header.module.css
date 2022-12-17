@@ -1,11 +1,11 @@
 .HeaderList {
     list-style-type: none;
     display: flex;
-    position: fixed;
     width: 100%;
     margin-top: 0;
+    top: 0;
 }
 
 .HeaderList li {
-    padding: 2.0rem;
+    padding: 1.0rem;
 }

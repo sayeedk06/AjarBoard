@@ -1,7 +1,7 @@
 import Head from "next/head"
-import Navbar from "../components/Navbar"
-import styles from "../styles/Profile.module.css"
-export default function profile () {
+import Navbar from "../../components/Navbar"
+import styles from "../../styles/Profile.module.css"
+export default function Import () {
     return (
         <div>
             <Head>
@@ -9,7 +9,7 @@ export default function profile () {
             </Head>
             <Navbar/>
             <main className={styles.main}>
-                <p>body stuff goes here</p>
+                <p>Import Csv here</p>
             </main>
            
         </div>

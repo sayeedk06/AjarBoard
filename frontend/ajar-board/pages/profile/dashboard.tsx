@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Navbar from "../../components/Navbar"
 import styles from "../../styles/Profile.module.css"
+
 export default function dashboard() {
     return (
         <div>

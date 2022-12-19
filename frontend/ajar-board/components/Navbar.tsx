@@ -21,7 +21,6 @@ const Navbar = () =>{
             <nav>
             <ul className={styles.stickyNav}>
                 <li><Link href='profile/home/'>Home / </Link></li>
-                <li><Link href='profile/dashboard'>Dashboard / </Link></li>
                 <li><Link href='profile/import'>Import / </Link></li>
             </ul>
             </nav>
@@ -31,7 +30,6 @@ const Navbar = () =>{
             <nav>
             <ul className={styles.nav}>
                 <li><Link href='home/'>Home / </Link></li>
-                <li><Link href='dashboard/'>Dashboard / </Link></li>
                 <li><Link href='import/'>Import / </Link></li>
             </ul>
             </nav>

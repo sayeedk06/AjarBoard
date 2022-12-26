@@ -1,6 +1,7 @@
 import { GetServerSideProps } from "next"
 import Head from "next/head"
 import DashCard from "../../components/DashCard"
+import CreateDash from "../../components/CreateDash"
 import Navbar from "../../components/Navbar"
 import styles from "../../styles/Profile.module.css"
 export default function Home ({dashboards}:any) {
@@ -11,13 +12,13 @@ export default function Home ({dashboards}:any) {
             </Head>
             <Navbar/>
             <main className={styles.main}>
-                <p>Existing Dashboards</p>
-                {/* {dash.map( (t) =>{
-                    return <li>{t.name}</li>
-                })} */}
+                <div>
+                    <p>Existing Dashboards</p>
+                    <CreateDash className={styles.createButton}/>
+                </div>
                 {dashboards.map(
                     (dashboard:any) => {
-                        return <DashCard name={dashboard.name} type={dashboard.dash_type} last_edited={dashboard.last_edited}/>                       
+                        return <DashCard key = {dashboard.id} name={dashboard.name} type={dashboard.dash_type} last_edited={dashboard.last_edited}/>                       
                     }
                 )}  
             </main>

@@ -8,5 +8,15 @@
 .main p {
     padding: 2rem;
     font-weight: bold;
+    display: inline-block;
     
+}
+
+.createButton {
+    padding: 2rem;
+    float: right;
+}
+
+.createButton button {
+    padding: 1rem;
 }

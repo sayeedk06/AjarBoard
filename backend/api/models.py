@@ -18,7 +18,7 @@ class dashboardModel(models.Model):
     user_id = models.ForeignKey(customUserModel, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     created = models.DateTimeField(default=timezone.now)
-    last_edited = models.DateTimeField()
+    last_edited = models.DateTimeField(default=timezone.now)
     dash_type = models.CharField(max_length=2, choices=DASH_TYPES, default ='DR' ,help_text='Specify whether the dashboard is a draft or ready to be published')
 
 class dataModel(models.Model):

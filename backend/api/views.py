@@ -13,6 +13,10 @@ class dashboardAPIView(generics.ListCreateAPIView):
     queryset = dashboardModel.objects.all()
     serializer_class = dashboardSerializer
 
+    def perform_create(self, serializer):
+        serializer.save(user_id = self.request.user)
+        return super().perform_create(serializer)
+
 class dashboardUpdateAPIView(generics.UpdateAPIView):
     serializer_class = dashboardSerializer
 

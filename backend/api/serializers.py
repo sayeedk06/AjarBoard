@@ -4,7 +4,7 @@ from .models import dashboardModel, dataModel
 class dashboardSerializer(serializers.ModelSerializer):
     class Meta:
         model = dashboardModel
-        fields = ['id', 'user_id', 'name','created', 'last_edited', 'dash_type']
+        fields = ['name','dash_type']
 
 class fileuploadSerializer(serializers.Serializer):
     file_type = serializers.CharField(max_length=10)

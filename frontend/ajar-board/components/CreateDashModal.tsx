@@ -1,32 +1,29 @@
 import { GetServerSideProps } from 'next'
 import styles from '../styles/Modal.module.css'
 
-// async function createDash (event:any) {
-//     event.preventDefault();
-//     try {
-//         const res = await fetch("http://127.0.0.1:8000/api/dashboard/", {
-//         method: 'POST',
-//         body: JSON.stringify({
-//         "user_id": 'admin',
-//         "name": "frontend",
-//         "created": null,
-//         "last_edited": null,
-//         "dash_type": null
-//         }),
-//         headers: {
-//             'content-type' : 'application/json'
-//         }
-//     })
-//     const data = await res.json()
-//     console.log(data)
-//     } catch (error) {
-//         console.log(error)
-//     }
+async function createDash (event:any) {
+    event.preventDefault();
+    try {
+        const res = await fetch("http://127.0.0.1:8000/api/dashboard/", {
+        method: 'POST',
+        body: JSON.stringify({
+        "name": 'frontend',
+        "dash_type": "DR",
+        }),
+        headers: {
+            'content-type' : 'application/json'
+        }
+    })
+    const data = await res.json()
+    console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
     
     
     
 
-// }
+}
 
 
 export default function CreateDashModal (props: any) {

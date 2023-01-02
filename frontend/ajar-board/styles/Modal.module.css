@@ -1,14 +1,25 @@
 .modal {
     padding: 1rem;
-    display: block;
+    display: none;
     position: fixed;
     width: 30%;
-    height: 30%;
+    height: 40%;
     background-color: white;
     margin-left: 40%;
     border-radius: 1rem;
 }
+.modal h3 {
+    padding: 1rem;
+}
+.modal span {
+    float: right;
+    padding: 1rem;
+}
 
+.modal span:hover {
+    background-color: black;
+    cursor: pointer;
+}
 .modal form {
     padding: 1rem;
     align-content: center;
